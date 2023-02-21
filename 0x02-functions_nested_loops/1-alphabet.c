@@ -7,7 +7,7 @@ int main(void)
 {
 	char print_alphabet;
 
-	print_alphabet = 'a';
+	print_alphabet[] = 'a';
 
 	printf("Lowercase alphabets:\n");
 	while (print_alphabet <= 'z')
