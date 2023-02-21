@@ -5,15 +5,15 @@
  */
 int main(void)
 {
-	char print_alphabet(void);
+	char print_alphabet;
 
-	print_alphabet() = 'a';
+	print_alphabet = 'a';
 
 	printf("Lowercase alphabets:\n");
-	while (print_alphabeti() <= 'z')
+	while (print_alphabet <= 'z')
 	{
-		printf("%c", print_alphabet());
-		print_alphabet()++;
+		printf("%c", print_alphabet);
+		print_alphabet++;
 	}
 	return (0);
 }
