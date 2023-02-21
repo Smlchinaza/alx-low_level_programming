@@ -10,10 +10,10 @@ int main(void)
 	print_alphabet() = 'a';
 
 	printf("Lowercase alphabets:\n");
-	while (print_alphabet <= 'z')
+	while (print_alphabeti() <= 'z')
 	{
-		printf("%c", print_alphabet);
-		print_alphabet++;
+		printf("%c", print_alphabet());
+		print_alphabet()++;
 	}
 	return (0);
 }
