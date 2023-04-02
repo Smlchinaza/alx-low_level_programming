@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
- * Return: 0
+ * argstostr - Concatenates all command line arguments into a single string.
+ *
+ * @ac: The number of command line arguments.
+ * @av: An array of strings containing the command line arguments.
+ *
+ * Return: A pointer to the concatenated string, or NULL if memory allocation fails.
  */
-
 char *argstostr(int ac, char **av)
 {
 	int i, n, r = 0, l = 0;
@@ -19,13 +20,16 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 	{
 		for (n = 0; av[i][n]; n++)
-			i++;
+			l++;
 	}
-l += ac;
 
-	str = malloc(sizeof(char) * l + 1);
+	l += ac;
+
+	str = malloc(sizeof(char) * (l + 1));
+
 	if (str == NULL)
 		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
 		for (n = 0; av[i][n]; n++)
@@ -39,7 +43,6 @@ l += ac;
 			str[r++] = '\n';
 		}
 	}
+
 	return (str);
 }
-
-
